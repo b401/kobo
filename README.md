@@ -7,7 +7,7 @@ I was tired to point my main `resolv.conf` to KDC servers. `kobo` allows to spec
 `kobo` hooks the libc function `getaddrinfo()` and replaces it with it's own dumb small DNS resolv function.
 
 ``` markdown
-export DNS=1.1.1.1
+export DNS=192.168.0.16 # IP of the internal DNS
 ./kobo smbclient \\internal.uauth.io\
 ```
 
