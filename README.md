@@ -4,7 +4,7 @@ Small DNS redirector.
 
 I was tired to point my main `resolv.conf` to KDC servers. `kobo` allows to specify a DNS resolver for a single application.
 
-`kobo` hooks the libc functions `getaddrinfo()` and replaces it with it's own dumb small DNS resolv function.
+`kobo` hooks the libc function `getaddrinfo()` and replaces it with it's own dumb small DNS resolv function.
 
 ``` markdown
 export DNS=1.1.1.1
